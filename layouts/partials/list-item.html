@@ -1,4 +1,5 @@
 <div class="item">
+
     {{ $.Scratch.Set "link" .RelPermalink }}
     {{ with .Params.repo }}
         {{ $repoHost := default "github" $.Params.repoHost }}
@@ -17,5 +18,4 @@
 
     <h4><a href="{{ .Scratch.Get "link" }}">{{ .Title }}</a></h4>
     <h5>{{ $.Scratch.Get "subtitle" }}</h5>
-    <!--{{ range .Params.tags }} <kbd class="item-tag">{{ . }}</kbd> {{ end }}-->
 </div>
