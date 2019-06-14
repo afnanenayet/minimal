@@ -34,8 +34,9 @@
     </script>
     {{ end }}
 
-    {{ if .Site.Params.math | default false }}
-    {{ partial "math.html" . }} {{ end }}
+    {{ if or .Site.Params.math .Params.math }}
+    {{ partial "math.html" . }} 
+    {{ end }}
 
     <body>
         {{ partial "body-open" . }}
