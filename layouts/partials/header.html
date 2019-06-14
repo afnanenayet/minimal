@@ -34,6 +34,7 @@
     </script>
     {{ end }}
 
+    {{ if .Site.Params.math | default false }}
     {{ partial "math.html" . }} {{ end }}
 
     <body>
