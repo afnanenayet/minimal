@@ -30,7 +30,7 @@
     {{ if .Site.Params.MathJax | default true }}
     <!-- adds MathJax support -->
     <script type="text/javascript" async
-      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
     {{ end }}
 
@@ -42,9 +42,10 @@
 
                 <div class="navbar-header">
 
-                    <a class="navbar-brand visible-xs" href="#">{{ .Title }}</a>
+                    <a class="navbar-brand visible-xs" href="#"
+                        style="text-overflow:ellipsis;white-space:nowrap;overflow:hidden;float:left;">{{ .Title }}</a>
 
-                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" style="float:right;white-space:nowrap">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>

@@ -16,6 +16,11 @@ main {
     max-width: 750px;
 }
 
+pre > code {
+    font-family: "Inconsolata", "Sans Mono", "Consolas", "Courier", monospace;
+    font-size: 1em;
+}
+
 /*footer*/
 
 .copyright {
