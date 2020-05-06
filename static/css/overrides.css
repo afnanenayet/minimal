@@ -1,0 +1,8 @@
+/*
+ * This file is just a hacky way to override some elements that are set by
+ * bootstrap. Could I do better than this? Yes, but I don't feel like messing
+ * with the theme.
+ */
+pre {
+    font-size: 90%;
+}
